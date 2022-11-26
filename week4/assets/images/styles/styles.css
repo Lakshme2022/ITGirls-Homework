@@ -1,0 +1,499 @@
+
+header {
+    position: absolute;
+    width: 1200px;
+    height: 853px;
+    left: 0px;
+    top: 0px;
+    background-image: url(/week4/assets/images/back-desktop.png);
+    }
+
+nav {
+    position: absolute;
+    width: 1200px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+    background-image: url(/week4/assets/images/bg2.png);
+   }
+
+#pinklogo {
+    position: absolute;
+    left: 130px;
+    top: 27px;
+    height: 40px;
+    width: 147px;
+    }
+
+.nav_item {
+    top: 48px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    }
+
+.nav_item:hover {
+    color:#D22856
+}
+
+a { 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+    }
+
+#phone {
+    position: absolute;
+    width: 1050px;
+    height: 645px;
+    left: 146px;
+    top: 208px;
+    }
+
+#pink_screen {
+    position: absolute;
+    width: 230px;
+    height: 408px;
+    left: 716px;
+    top: 273px;
+    }
+
+#slogan {
+    position: absolute;
+    width: 300px;
+    height: 174px;
+    left: 130px;
+    top: 224px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    left: 130px;
+    color: #FFFFFF;
+    }
+
+button {
+    position: absolute;
+    width: 300px;
+    height: 56px;
+    left: 161px;
+    top: 469px;
+    background-color: transparent;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 18px;
+    color: #FFFFFF;
+    left: 130px;
+    border: 2px solid #FFFFFF;
+    padding: 10px, 25px 10px, 25px ;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 29px;
+    }
+
+#comment {
+    position: absolute;
+    width: 300px;
+    height: 37px;
+    left: 130px;
+    top: 686px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+.os_button {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    bottom: 226px;
+    }   
+    
+.os_button:hover {
+    color: #000000;
+}
+
+#offer {
+    position: absolute;
+    width: 780px;
+    height: 174px;
+    left: 210px;
+    right: 210px;
+    top: 930px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #283645;
+}
+#offer_info {
+    position: absolute;
+    width: 1200px;
+    height: 715px;
+    left: 0px;
+    top: 1170px;
+    background-image: url(/week4/assets/images/grey_background.png);
+}
+
+.info_img {
+    position: absolute;
+    top: 0px;
+
+}
+
+.info_img_screen {
+    position: absolute;
+    top: 39px;
+}
+
+p {
+    position: absolute;
+    width: 244px;
+    height: 53px;
+    top: 239px;
+    padding: 60px 30px 60px 30px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-image: url(/week4/assets/images/подложка.png);
+} 
+
+.info {
+    position: absolute;
+    width: 252px;
+    height: 103px;
+    top: 430px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+ 
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #283645;
+}
+
+#effect {
+    position: absolute;
+    width: 1200px;
+    height: 429px;
+    left: 0px;
+    top: 1786px;
+    background-image: url(/week4/assets/images/background.png);
+}
+
+#timer {
+    position: absolute;
+    width: 1200px;
+    height: 429px;
+    left: 130px;
+    top: 30px;
+}
+
+#timer1 {
+    position: absolute;
+    width: 252px;
+    height: 252px;
+    left: 154px;
+    top: 100px;
+
+}
+
+#timer2 {
+    position: absolute;
+    width: 138px;
+    height: 94px;
+    left: 211px;
+    top: 175px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 163px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #D22856;
+}
+
+#timer_info {
+    position: absolute;
+    width: 534px;
+    height: 74px;
+    left: 500px;
+    top: 190px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    color: #283645;
+
+}
+
+#effect24 {
+
+    position: absolute;
+    width: 298px;
+    height: 23px;
+    left: 470px;
+    top: 30px;
+
+}
+
+#link_effect {
+    position: absolute;
+    width: 290px;
+    height: 13px;
+    left: 7px;
+    top: 130px;
+
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: #D22856;
+}
+
+#link_effect:hover {
+    color: #1a3e8b;
+    font-style: italic;
+}
+
+ #plans {
+    position: absolute;
+    width: 1200px;
+    height: 534px;
+    left: 0px;
+    top: 2620px;
+    background-image: url(/week4/assets/images/grey_background.png);
+
+ }
+
+ #plans_fees {
+    position: absolute;
+    width: 936px;
+    height: 271px;
+    left: 130px;
+    top: 154px;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px; 
+    background-color: #FFFFFF;
+ }
+
+ th {
+    width: 233px;
+    height: 94px;
+   
+ }
+ .th1 {
+    background: #F2F2F2;;
+ }
+
+ .th2 {
+    font-family: 'Open Sans';
+    color: #FFFFFF;
+    background: #283645;
+ }
+ 
+ .td1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #283645;
+ }
+
+.td2 {
+padding-left: 100px;
+}
+
+ #contacts {
+    position: absolute;
+    width: 1200px;
+    height: 271px;
+    left: 0px;
+    top: 3228px;
+
+    background: #FFFFFF;
+ }
+#question {
+
+    position: absolute;
+width: 462px;
+height: 106px;
+left: 369px;
+top: 0px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 50px;
+line-height: 68px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #283645;
+}
+
+#general_contacts {
+
+    position: absolute;
+    width: 936px;
+    height: 200px;
+    left: 170px;
+    top: 170px;
+
+}
+
+.td3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    
+    color: #283645;
+
+}
+
+.td4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+
+    color: #D22856;
+}
+
+#contact_map {
+    position: absolute;
+    width: 1200px;
+    height: 502px;
+    left: 0px;
+    top: 3619px;
+
+    background: url(/week4/assets/images/map.png);
+}
+#mapsmark1 {
+    position: absolute;
+    left: 582px;
+    top: 264px; 
+    
+}
+#mapsmark2 {
+    position: absolute;
+    left: 592px;
+    top: 274px; 
+    
+}
+#additional_contacts {
+
+    position: absolute;
+    width: 1200px;
+    height: 197px;
+    left: 0px;
+    top: 4120px;
+
+    background: #FFFFFF;
+}
+
+.socialmedia {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 54px;
+    border: 3px solid #E5E5E5;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+#pinklogo {
+    top: 54px;
+    left: 130px;
+}
+
+#develop {
+    position: absolute;
+width: 113px;
+height: 13px;
+left: 917px;
+top: 70px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+
+display: flex;
+align-items: center;
+
+color: #283645;
+}
+
+#academy_logo {
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    left: 1043px;
+    top: 61px;
+
+}
+p::first-letter {
+    color: #D22856;
+}
+
