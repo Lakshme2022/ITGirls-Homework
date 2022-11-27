@@ -7,7 +7,7 @@ body {
     justify-content: flex-end;
     width: 70vw;
     height: 35vh;
-        }
+}
 
 header {
     display:flex;
@@ -22,6 +22,7 @@ main {
     display: flex;
     height: 60%;
 }
+
 section {
     flex-grow: 3;
     display: flex;
@@ -29,7 +30,6 @@ section {
     text-align: center;
     background: #FEF8E5;
     font-weight: bold;
-   
 }
 
 #part1 {
@@ -46,18 +46,15 @@ section {
   
     height: 40%;
     margin-top: 15px
-
-
 }
 
 .more {
     width: 45%;
 }
+
  #more_more {
  width: 95%;
  margin-top: 15px;
- 
-
  }
 
  .color {
@@ -71,6 +68,7 @@ aside {
     background: #E0EBCE;
     font-weight: bold;
 }
+
 footer {
 display: flex;
 height: 25%;
