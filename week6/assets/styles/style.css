@@ -1,30 +1,34 @@
 
 .container_1 {
     display: grid;
-    width: 70vw;
     height: 30vh;
     grid-template-columns: 35% 35% 30%;
     grid-template-rows: repeat(5, 20%);
     text-align: center;
-
+    border: 1px solid red;
 }
 
 header {
     grid-column: 1/4;
     grid-row: 1/2;
     background: #cccccc;
+    display: grid;
+    align-items: center;
+
 }
 
 .content {
     grid-column: 1/3;
     grid-row: 2/4;
     background: #FEF8E5;
+    padding: 2%;
 }
 
 aside {
     grid-column: 3/4;
     grid-row: 2/6;
     background: #E0EBCE;
+    padding-top: 5%;
 }
 
 .container_2 {
@@ -34,36 +38,42 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
     justify-content: space-around;
+    grid-gap: 10px;
     background: #FEF8E5;
 }
 
 .section_1 {
     background: #FAEBBF;
+    height: 80%;
+    margin: 10px;
+    display: grid;
+    align-items: center;
 }
+
 .more {
     grid-column: 1/3;
     grid-row: 2/3;
     background: #FAEBBF;
-
 }
 
 footer {
     display: grid;
-    width: 70vw;
     height: 7vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 20px;
     justify-content: space-around;
     text-align: center;
-
     background: #cccccc;
 }
 
 .section_2 {
     background: white;
     margin: 10px;
+}
 
+footer div {
+    display: grid;
+   align-items: center;
 }

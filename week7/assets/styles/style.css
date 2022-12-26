@@ -1,0 +1,137 @@
+
+@media screen and (max-width: 767px) {
+    .base_box {
+        display: grid;
+        height: 100vw;
+        font-size: 0.75em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 50% 20% 20%;
+        grid-template-areas: "header"
+        "content"
+        "aside"
+        "footer";
+        text-align: center;
+    }
+
+    footer {
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .base_box {
+        max-width: 100vw;
+        font-size: 1em;
+        height: 50vw;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 15% 65% 20%;
+        grid-template-areas: "header header"
+        "content aside"
+        "footer footer";
+    }
+
+    footer {
+
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .base_box {
+        max-width: 60vw;
+        font-size: 1.5em;
+        height: 35vw;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 15% 65% 20%;
+        grid-template-areas: "header header"
+        "content aside"
+        "footer footer";
+    }
+
+    footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        background: #cccccc;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.base_box {
+    display: grid;
+
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    grid-area: header;
+    background: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    grid-area: aside;
+    background: #E0EBCE;
+    padding-top: 10%;
+}
+
+.content {
+    grid-area: content;
+    background: #FEF8E5;
+    padding-top: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-areas: "main main"
+        "part_1 part_2"
+        "part_3 part_3";
+}
+
+.main {
+    grid-area: main;
+}
+.part_3 {
+    grid-area: part_3;
+}
+
+.part_1, .part_2, .part_3 {
+    background: #FAEBBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    background: #cccccc;
+}
+
+.section {
+    background: white;
+    height: 80%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
