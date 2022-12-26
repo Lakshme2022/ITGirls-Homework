@@ -5,7 +5,6 @@
     grid-template-columns: 35% 35% 30%;
     grid-template-rows: repeat(5, 20%);
     text-align: center;
-    border: 1px solid red;
 }
 
 header {
