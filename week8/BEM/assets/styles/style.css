@@ -1,0 +1,209 @@
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .titleMain {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+
+    .menu {
+       flex-wrap: wrap;
+
+    }
+    .menu__link {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        width: 100vw;
+        margin: auto;
+    }
+
+    .image__img {
+        width: 100%;
+    }
+
+    .titleMain {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+    .footer {
+        width: 80%;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+
+    .menu__link {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 70vw;
+        margin: 5% 10% 5% 10%;
+    }
+
+.titleMain {
+    font-size: 60px;
+}
+
+.text {
+    font-size: 20px;
+}
+    .footer {
+        width: 43%;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    margin-right: 5%;
+
+}
+
+.button__button {
+    background: #5222D0;
+    width: 120px;
+    height: 38px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Intro Demo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+
+}
+
+.button__img {
+    padding: 0 0 7px 7px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-areas: ". image"
+    "titleMain image"
+    "text image"
+    "buttonBuy image"
+    ". image";
+
+    padding-left: 3%;
+}
+
+.image {
+    grid-area: image;
+
+}
+
+.titleMain {
+    grid-area: titleMain;
+    font-family: 'Intro Demo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.text {
+    grid-area: text;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.buttonBuy {
+    grid-area: buttonBuy;
+}
+
+.buttonBuy__button {
+    background: #5222D0;
+    border-radius: 100px;
+    width: 270px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Intro Demo', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.buttonBuy__img {
+    padding: 0 0 10px 10px;
+}
+
+.footer {
+    grid-area: footer;
+    padding-left: 3%;
+
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+
+
+}
+
+.menu__link {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    color: #5222D0;
+    text-decoration: none;
+}
