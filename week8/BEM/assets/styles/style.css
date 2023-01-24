@@ -70,13 +70,13 @@
         margin: 5% 10% 5% 10%;
     }
 
-.titleMain {
-    font-size: 60px;
-}
+    .titleMain {
+        font-size: 60px;
+    }
 
-.text {
-    font-size: 20px;
-}
+    .text {
+        font-size: 20px;
+    }
     .footer {
         width: 43%;
     }
@@ -87,123 +87,124 @@
 }
 
 
-.container {
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas: "header"
-    "main"
-    "footer";
 
-}
+    .container {
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas: "header"
+        "main"
+        "footer";
 
-.header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    }
 
-    margin-right: 5%;
+    .header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
 
-}
+     margin-right: 5%;
 
-.button__button {
-    background: #5222D0;
-    width: 120px;
-    height: 38px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Intro Demo', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 13px;
-    color: #FFFFFF;
+    }
 
-}
+    .button__button {
+        background: #5222D0;
+        width: 120px;
+        height: 38px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Intro Demo', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        color: #FFFFFF;
 
-.button__img {
-    padding: 0 0 7px 7px;
-}
+    }
 
-.main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 5fr 6fr;
-    grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
-    grid-template-areas: ". image"
-    "titleMain image"
-    "text image"
-    "buttonBuy image"
-    ". image";
+    .button__img {
+        padding: 0 0 7px 7px;
+    }
 
-    padding-left: 3%;
-}
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 5fr 6fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+        grid-template-areas: ". image"
+        "titleMain image"
+        "text image"
+        "buttonBuy image"
+        ". image";
 
-.image {
-    grid-area: image;
+        padding-left: 3%;
+    }
 
-}
+    .image {
+        grid-area: image;
 
-.titleMain {
-    grid-area: titleMain;
-    font-family: 'Intro Demo', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-}
+    }
 
-.text {
-    grid-area: text;
-    font-family: 'Roboto Slab', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 160%;
-}
+    .titleMain {
+        grid-area: titleMain;
+        font-family: 'Intro Demo', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
 
-.buttonBuy {
-    grid-area: buttonBuy;
-}
+    .text {
+        grid-area: text;
+        font-family: 'Roboto Slab', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+    }
 
-.buttonBuy__button {
-    background: #5222D0;
-    border-radius: 100px;
-    width: 270px;
-    height: 84px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Intro Demo', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 35px;
-    color: #FFFFFF;
-}
+    .buttonBuy {
+        grid-area: buttonBuy;
+    }
 
-.buttonBuy__img {
-    padding: 0 0 10px 10px;
-}
+    .buttonBuy__button {
+        background: #5222D0;
+        border-radius: 100px;
+        width: 270px;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Intro Demo', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
 
-.footer {
-    grid-area: footer;
-    padding-left: 3%;
+    .buttonBuy__img {
+        padding: 0 0 10px 10px;
+    }
 
-}
+    .footer {
+        grid-area: footer;
+        padding-left: 3%;
 
-.menu {
-    grid-area: menu;
-    display: flex;
+    }
+
+    .menu {
+        grid-area: menu;
+        display: flex;
 
 
-}
+    }
 
-.menu__link {
-    font-family: 'Roboto Slab', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 160%;
-    color: #5222D0;
-    text-decoration: none;
-}
+    .menu__link {
+        font-family: 'Roboto Slab', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        color: #5222D0;
+        text-decoration: none;
+    }
