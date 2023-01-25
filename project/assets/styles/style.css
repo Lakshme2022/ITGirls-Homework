@@ -61,8 +61,11 @@
   .title2 {
     font-size: 25px;
   }
+  .button__text {
+    font-size: 20px;
+  }
   .socialMedia {
-    width: 408px;
+    width: 365px;
     margin: 1% auto 1% auto;
   }
 }
@@ -97,6 +100,9 @@
   }
   .freeDates {
     width: 548px;
+  }
+  .button__text {
+    font-size: 25px;
   }
   .card__content {
     flex-direction: column;
@@ -145,6 +151,9 @@
   }
   .freeDates {
     width: 548px;
+  }
+  .button__text {
+    font-size: 25px;
   }
   .title1 {
     font-size: 60px;
@@ -336,7 +345,6 @@ footer {
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
   line-height: 140%;
   color: #EFE6DD;
 }
