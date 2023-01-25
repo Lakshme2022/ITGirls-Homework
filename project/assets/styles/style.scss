@@ -57,6 +57,9 @@
     padding: 20px;
   }
 
+  .title1 {
+    font-size: 40px;
+  }
 
   .card__content{
     flex-direction: column;
@@ -66,8 +69,13 @@
     margin: 20px;
   }
 
+  .title2 {
+    font-size: 25px;
+  }
+
 .socialMedia {
   width: 408px;
+  margin: 1% auto 1% auto;
 }
 }
 
@@ -100,6 +108,7 @@
 
   .text {
     padding: 20px;
+    font-size: 20px;
   }
 
   .freeDates {
@@ -110,6 +119,10 @@
     flex-direction: column;
   }
 
+  .title1 {
+    font-size: 50px;
+  }
+
   .card__img {
     margin: 20px;
   }
@@ -118,13 +131,15 @@
     width: 477px;
   }
 
-  .socialMedia {
-    width: 708px;
-  }
-
   .title2 {
     width: 702px;
     height: 104px;
+    font-size: 35px;
+  }
+
+  .socialMedia {
+    width: 708px;
+    margin: 2% auto 2% auto;
   }
 }
 
@@ -145,12 +160,24 @@
     text-align: justify;
   }
 
+  .text {
+    font-size: 26px;
+  }
+
   .about__img {
     margin: 75px 7px 5px 80px;
   }
 
   .freeDates {
     width: 548px;
+  }
+
+  .title1 {
+    font-size: 60px;
+  }
+
+  .card__content {
+    margin: 30px 0 160px 7px;
   }
 
   .card__img {
@@ -161,14 +188,17 @@
     width: 477px;
   }
 
-  .socialMedia {
-    width: 708px;
-  }
-
   .title2 {
     width: 702px;
     height: 104px;
+    font-size: 35px;
   }
+
+  .socialMedia {
+    width: 708px;
+    margin: 2% auto 5% auto;
+  }
+
 }
 
 
@@ -281,7 +311,6 @@ nav {
   font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 26px;
   line-height: 140%;
   text-align: justify;
   color: #FFFFFF;
@@ -382,7 +411,6 @@ footer{
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 60px;
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
@@ -392,7 +420,6 @@ footer{
 .card__content {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 160px 7px;
 }
 
 .card__img {
@@ -432,7 +459,6 @@ footer{
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
   line-height: 140%;
   text-align: center;
   letter-spacing: 0.17em;
@@ -451,7 +477,6 @@ footer{
   background: #545A62;
   border-radius: 24px;
   height: 97px;
-  margin: 2% auto 5% auto;
   border-width: 0;
 }
 
