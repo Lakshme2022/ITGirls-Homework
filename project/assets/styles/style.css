@@ -311,7 +311,8 @@ nav {
 
 .sample__img:hover {
   transform: scale(1.1);
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: 1s;
 }
 
 footer {
