@@ -61,6 +61,14 @@
 
   }
 
+  .sample {
+    max-width: 1320px;
+  }
+
+  .sample__img {
+    max-width: 100%;
+  }
+
   .text {
     padding: 20px;
   }
@@ -95,7 +103,7 @@
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1180px) {
 
   header {
     background: url("../images/header_img.png");
@@ -132,6 +140,14 @@
   .text {
     padding: 20px;
     font-size: 20px;
+  }
+
+  .sample {
+    max-width: 1000px;
+  }
+
+  .sample__img {
+    max-width: 30%;
   }
 
   .freeDates {
@@ -175,7 +191,7 @@
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1181px) {
 
   header {
     background: url("../images/header_img.png");
@@ -204,6 +220,14 @@
 
   .about__img {
     margin: 75px 7px 5px 80px;
+  }
+
+  .sample {
+    width: 1320px;
+  }
+
+  .sample__img {
+    max-width: 100%;
   }
 
   .freeDates {
@@ -367,23 +391,22 @@ nav {
   display: flex;
   background: rgba(58, 63, 69, 1);
   flex-wrap: wrap;
-  max-width: 1320px;
   justify-content: space-around;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .sample__img {
-  max-width: 100%;
   margin-bottom: 20px;
   object-fit: cover;
 }
 
 .sample__img:hover {
   transform: scale(1.1);
-  border-radius: 10px;
   transition: 1s;
+  border-radius: 5px;
 }
+
 
 footer{
   display: flex;
@@ -506,8 +529,6 @@ footer{
   letter-spacing: 0.17em;
   color: #FFFFFF;
   margin: 10% auto 5% auto;
-
-
 }
 
 .socialMedia {
