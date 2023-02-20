@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats</title>
+
+    <script>
+
+        let index = 1;
+
+        function changeImg(button) {
+            let image = document.getElementById('cat');
+            index = index + button;
+            if(index<1) {
+                index=1;
+            }
+            if(index>9) {
+                index=9;
+            }
+            image.src = "assets/images/cat_"+index+".avif";
+
+        }
+
+    </script>
+</head>
+<body>
+
+<main>
+    <button onclick="changeImg(-1)">Previous</button>
+    <img src="assets/images/cat_1.avif" id="cat" width="300px" height="300px">
+    <button onclick="changeImg(+1)">Next</button>
+</main>
+</body>
+</html>
