@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YOUR SHOPPING BAG</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+    <link rel="stylesheet" href="assets/styles/normalize.css"/>
+
+</head>
+<body>
+<!--<header>-->
+<!--    <img class="logo" src="assets/images/logo_lkbennett_black.svg">-->
+<!--</header>-->
+<main>
+<!--    <div class="additionalInfo">-->
+<!--        <div class="additionalInfo__text">STANDARD SHIPPING ACROSS EUROPE FROM €10 </div>-->
+<!--    </div>-->
+    <h1>Your shopping bag</h1>
+    <div class="shoppingCard" id="shoppingCard1">
+        <img class="shoppingCard__img" src="assets/images/GABRIELLE_CREAM.jpeg" alt="Gabrielle Cream Camelia Print Silk Midi Dress">
+        <div class="shoppingCard_info">
+            <div class="name">Gabrielle Cream Camelia Print Silk Midi Dress</div>
+            <div class="price" id="price1">300.00</div>
+            <div class="size">UK 12 | EU 40 | US 8</div>
+            <input type="number" class="quantity" value="1">
+            <div class="priceSale" id="priceSale1"></div>
+            <button class="remove" id="remove1">[X]</button>
+        </div>
+    </div>
+    <div class="shoppingCard" id="shoppingCard2">
+        <img class="shoppingCard__img" src="assets/images/JULIEN_RED.jpeg" alt="Julien Red Silk Dress">
+        <div class="shoppingCard_info">
+            <div class="name">Julien Red Silk Dress</div>
+            <div class="price" id="price2">296.00</div>
+            <div class="size">UK 12 | EU 40 | US 8</div>
+            <input type="number" class="quantity" value="1">
+            <div class="priceSale" id="priceSale2"></div>
+            <button class="remove" id="remove2">[X]</button>
+        </div>
+    </div>
+    <div class="shoppingCard" id="shoppingCard3">
+        <img class="shoppingCard__img" src="assets/images/AVERY_PINKCREAM.jpeg" alt="GAvery Pink and Cream Houndstooth Print Pleated Midi Dress">
+        <div class="shoppingCard_info">
+            <div class="name">Avery Pink and Cream Houndstooth Print Pleated Midi Dress</div>
+            <div class="price" id="price3">190.00</div>
+            <div class="size">UK 12 | EU 40 | US 8</div>
+            <input type="number" class="quantity" value="1">
+            <div class="priceSale" id="priceSale3"></div>
+            <button class="remove" id="remove3">[X]</button>
+        </div>
+    </div>
+    <div class="shoppingCard" id="shoppingCard4">
+        <img class="shoppingCard__img" src="assets/images/ADDISON_NAVYCREAM.jpeg" alt="Addison Navy And Cream Graphic Print Midi Dress">
+        <div class="shoppingCard_info">
+            <div class="name">Addison Navy And Cream Graphic Print Midi Dress</div>
+            <div class="price" id="price4">225.00</div>
+            <div class="size">UK 12 | EU 40 | US 8</div>
+            <input type="number" class="quantity" value="1">
+            <div class="priceSale" id="priceSale4"></div>
+            <button class="remove" id="remove4">[X]</button>
+        </div>
+
+    </div>
+    <button class="sale">Use your 20% sale promo</button>
+    <div class="total">
+        <h3>Total cost</h3><span id="totalCost"></span><span id="totalSale"></span>
+    </div>
+</main>
+
+<script>
+
+let sale = document.querySelector('.sale');
+
+let price1 = document.getElementById('price1');
+let priceSale1 = document.getElementById('priceSale1');
+
+let price2 = document.getElementById('price2');
+let priceSale2 = document.getElementById('priceSale2');
+
+
+let price3 = document.getElementById('price3');
+let priceSale3 = document.getElementById('priceSale3');
+
+
+let price4 = document.getElementById('price4');
+let priceSale4 = document.getElementById('priceSale4');
+
+let price11=Number(price1.innerText);
+let price22=Number(price2.innerText);
+let price33=Number(price3.innerText);
+let price44=Number(price4.innerText);
+
+let total2=price11+price22+price33+price44;
+let totalCost=document.getElementById('totalCost');
+totalCost.innerText=total2;
+
+function changePrice(){
+    let result1 = Number(price1.textContent) - Number(price1.textContent) /100*20;
+    priceSale1.innerText = result1;
+    price1.style["text-decoration"] = "line-through";
+
+    let result2 = Number(price2.textContent) - Number(price2.textContent) /100*20;
+    priceSale2.innerText = result2;
+    price2.style["text-decoration"] = "line-through";
+
+    let result3 = Number(price3.textContent) - Number(price3.textContent) /100*20;
+    priceSale3.innerText = result3;
+    price3.style["text-decoration"] = "line-through";
+
+    let result4 = Number(price4.textContent) - Number(price4.textContent) /100*20;
+    priceSale4.innerText = result4;
+    price4.style["text-decoration"] = "line-through";
+
+    let priceSale11=Number(priceSale1.innerText);
+    let priceSale22=Number(priceSale2.innerText);
+    let priceSale33=Number(priceSale3.innerText);
+    let priceSale44=Number(priceSale4.innerText);
+
+    let total1=priceSale11+priceSale22+priceSale33+priceSale44;
+    let totalSale=document.getElementById('totalSale');
+    totalSale.innerText=total1;
+
+    totalCost.style["text-decoration"] = "line-through";
+
+}
+
+
+sale.addEventListener('click', changePrice);
+
+
+
+
+// let remove = document.getElementById('remove1');
+// let shoppingCard = document.getElementById('shoppingCard1');
+//
+// remove.addEventListener('click', del1);
+// function del1(){
+//     shoppingCard.style.display ="none";
+// }
+//
+// let remove2 = document.getElementById('remove2');
+// let shoppingCard2 = document.getElementById('shoppingCard2');
+//
+// remove2.addEventListener('click', del2);
+// function del2(){
+//     shoppingCard2.style.display ="none";
+// }
+//
+// let remove3 = document.getElementById('remove3');
+// let shoppingCard3 = document.getElementById('shoppingCard3');
+//
+// remove3.addEventListener('click', del3);
+// function del3(){
+//     shoppingCard3.style.display ="none";
+// }
+//
+// let remove4 = document.getElementById('remove4');
+// let shoppingCard4 = document.getElementById('shoppingCard4');
+//
+// remove4.addEventListener('click', del4);
+// function del4(){
+//     shoppingCard4.style.display ="none";
+// }
+</script>
+
+</body>
+
+</html>
+
+
