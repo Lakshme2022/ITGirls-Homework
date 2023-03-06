@@ -24,7 +24,6 @@ function SEND(){
         alert("Пожалуйста, заполните все поля");
         return;
     }
-    console.log(name.value);
     authorName.innerText=capitalize(name.value.toLowerCase()) + ":";
     authorImage.src=image.value;
     authorComments.innerText=comments.value;
