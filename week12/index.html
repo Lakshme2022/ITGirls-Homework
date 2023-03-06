@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments form</title>
+
+    <link rel="stylesheet" href="assets/styles/normalize.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+
+</head>
+<body>
+<header>
+  <h2>Сервис комментариев со спам фильтром</h2>
+</header>
+  <main>
+      <section>
+    <h3>Оставьте ваш комментарий</h3>
+    <label>Введите ваши ФИО:</label>
+    <input type=text class="name">
+    <label>Введите ссылку вашего аватара:</label>
+    <input type=text class="image">
+    <label>Оставьте комментарий:</label>
+    <textarea class="comments"></textarea>
+
+    <button class="send">Отправить</button>
+      </section>
+
+      <aside>
+          <h3>Чат</h3>
+          <div class="author">
+          <img class="author__image"> <p class="author__name"></p>
+          </div>
+          <div class="author__comments"></div>
+      </aside>
+
+</main>
+
+<script src="assets/styles/comments.js"></script>
+</body>
+</html>
