@@ -12,18 +12,11 @@ function capitalize(str) {
 }
 
 function SEND(){
-    if (!name.value) {
+    if (!name.value | !image.value | !comments.value) {
         alert("Пожалуйста, заполните все поля");
         return;
     }
-    if (!image.value) {
-        alert("Пожалуйста, заполните все поля");
-        return;
-    }
-    if (!comments.value) {
-        alert("Пожалуйста, заполните все поля");
-        return;
-    }
+
     authorName.innerText=capitalize(name.value.toLowerCase()) + ":";
     authorImage.src=image.value;
     authorComments.innerText=comments.value;
@@ -38,3 +31,5 @@ function SEND(){
 }
 
 send.addEventListener('click', SEND);
+
+
