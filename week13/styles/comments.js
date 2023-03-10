@@ -56,12 +56,12 @@ function SEND(){
     if (image.value.trim() === ""){
         let randomAvatar = defaultAvatar[Math.floor(Math.random() * defaultAvatar.length)];
         console.log(Math.floor(Math.random() * defaultAvatar.length))
-        console.log(randomAvatar)
+        console.log(randomAvatar);
         avatar.src = 'assets/images/'+randomAvatar;
-        console.log(avatar.src)
     } else {
-        avatar.src=image.value;
+        avatar.src = image.value;
     }
+
 }
 
 send.addEventListener('click', SEND);
