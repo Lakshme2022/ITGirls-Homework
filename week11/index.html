@@ -95,21 +95,21 @@ let totalCost=document.getElementById('totalCost');
 totalCost.innerText=total2;
 
 function changePrice(){
-    let result1 = Number(price1.textContent) - Number(price1.textContent) /100*20;
+    const result1 = Number(price1.textContent) - Number(price1.textContent) /100*20;
     priceSale1.innerText = result1;
-    price1.style["text-decoration"] = "line-through";
+    price1.style.textDecoration = "line-through";
 
-    let result2 = Number(price2.textContent) - Number(price2.textContent) /100*20;
+    const result2 = Number(price2.textContent) - Number(price2.textContent) /100*20;
     priceSale2.innerText = result2;
-    price2.style["text-decoration"] = "line-through";
+    price2.style.textDecoration = "line-through";
 
-    let result3 = Number(price3.textContent) - Number(price3.textContent) /100*20;
+    const result3 = Number(price3.textContent) - Number(price3.textContent) /100*20;
     priceSale3.innerText = result3;
-    price3.style["text-decoration"] = "line-through";
+    price3.style.textDecoration = "line-through";
 
-    let result4 = Number(price4.textContent) - Number(price4.textContent) /100*20;
+    const result4 = Number(price4.textContent) - Number(price4.textContent) /100*20;
     priceSale4.innerText = result4;
-    price4.style["text-decoration"] = "line-through";
+    price4.style.textDecoration = "line-through";
 
     let priceSale11=Number(priceSale1.innerText);
     let priceSale22=Number(priceSale2.innerText);
@@ -120,7 +120,7 @@ function changePrice(){
     let totalSale=document.getElementById('totalSale');
     totalSale.innerText=total1;
 
-    totalCost.style["text-decoration"] = "line-through";
+    totalCost.style.textDecoration = "line-through";
 
 }
 

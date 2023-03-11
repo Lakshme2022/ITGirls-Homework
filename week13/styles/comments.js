@@ -37,7 +37,7 @@ function capitalize(str) {
 }
 
 function SEND(){
-    authorName.innerText=capitalize(name.value.toLowerCase()) + ":";
+    authorName.innerText = capitalize(name.value.toLowerCase()) + ":";
     authorComments.innerText=comments.value;
     name.value='';
     image.value='';
