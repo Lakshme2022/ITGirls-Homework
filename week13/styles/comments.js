@@ -1,13 +1,10 @@
 
-let send = document.querySelector('.send');
-let name = document.querySelector('.name');
-let image = document.querySelector('.image');
-let comments = document.querySelector('.comments');
-let avatar = document.querySelector('.author__image');
-let authorName = document.querySelector('.author__name');
-let authorComments = document.querySelector('.author__comments');
-let d = new Date ();
-let options ={
+const send = document.querySelector('.send');
+const name = document.querySelector('.name');
+const image = document.querySelector('.image');
+const comments = document.querySelector('.comments');
+
+const options ={
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -15,8 +12,7 @@ let options ={
     minute: "numeric",
 };
 
-let date = document.querySelector('.author__date');
-let radio = document.getElementById('no');
+const radio = document.getElementById('no');
 const defaultAvatar = [
     "cat_1.avif",
     "cat_2.avif",
@@ -29,42 +25,48 @@ const defaultAvatar = [
     "cat_9.avif",
 ];
 
-let chat = document.querySelector(".chat");
-
+const chat = document.querySelector(".chat");
 
 function capitalize(str) {
     return str.replace(/(^|\s)\S/g, (a) => {return a.toUpperCase()})
 }
 
 function SEND(){
-    authorName.innerText = capitalize(name.value.toLowerCase()) + ":";
-    authorComments.innerText=comments.value;
+    let d = new Date ();
+
+    let correctName = name.value;
+    if (correctName === "" || radio.checked) {
+        correctName = "Username";
+    }
+
+    let avatar = image.value;
+    if (avatar.trim() === ""){
+        let randomAvatar = defaultAvatar[Math.floor(Math.random() * defaultAvatar.length)];
+        avatar = 'assets/images/'+randomAvatar;
+    }
+
+    let text = comments.value;
+    text = text.replace(/viagra/gi, "***");
+    text = text.replace(/xxx/gi, "***");
+
+    if (!comments.value) {
+        alert("Пожалуйста, напишите ваш комментарий");
+        return;
+    }
+
+    let addComment = `<div class="comment">
+    <div class="author">
+        <img class="author__image" src="${avatar}">
+            <p class="author__name">${capitalize(correctName.toLowerCase()) + ":"}</p>
+            <p class="author__date">${d.toLocaleString("ru", options)}</p>    
+    </div>
+    <div class="author__comments">${text}</div>
+</div>`;
+
+    chat.innerHTML = addComment + chat.innerHTML;
     name.value='';
     image.value='';
     comments.value='';
-
-    let text = authorComments.innerText;
-    text = text.replace(/viagra/gi, "***");
-    text = text.replace(/xxx/gi, "***");
-    authorComments.innerText = text;
-    date.innerText = d.toLocaleString("ru", options);
-
-    if (authorName.innerText === ":" || radio.checked) {
-        authorName.innerText = "Username:";
-    }
-
-    if (image.value.trim() === ""){
-        let randomAvatar = defaultAvatar[Math.floor(Math.random() * defaultAvatar.length)];
-        console.log(Math.floor(Math.random() * defaultAvatar.length))
-        console.log(randomAvatar);
-        avatar.src = 'assets/images/'+randomAvatar;
-    } else {
-        avatar.src = image.value;
-    }
-
 }
 
 send.addEventListener('click', SEND);
-
-
-
