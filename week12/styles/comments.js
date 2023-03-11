@@ -8,11 +8,11 @@ let authorName = document.querySelector('.author__name');
 let authorComments = document.querySelector('.author__comments');
 
 function capitalize(str) {
-    return str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
+    return str.replace(/(^|\s)\S/g, (a) => {return a.toUpperCase()})
 }
 
 function SEND(){
-    if (!name.value | !image.value | !comments.value) {
+    if (!name.value || !image.value || !comments.value) {
         alert("Пожалуйста, заполните все поля");
         return;
     }

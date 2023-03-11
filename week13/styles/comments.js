@@ -33,7 +33,7 @@ let chat = document.querySelector(".chat");
 
 
 function capitalize(str) {
-    return str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
+    return str.replace(/(^|\s)\S/g, (a) => {return a.toUpperCase()})
 }
 
 function SEND(){
