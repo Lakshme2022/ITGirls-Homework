@@ -60,8 +60,8 @@ function SEND(){
             <p class="author__name">${capitalize(correctName.toLowerCase()) + ":"}</p>
             <p class="author__date">${d.toLocaleString("ru", options)}</p>    
     </div>
-    <div class="author__comments">${text}</div>
-</div>`;
+        <div class="author__comments">${text}</div>
+    </div>`;
 
     chat.innerHTML = addComment + chat.innerHTML;
     name.value='';
