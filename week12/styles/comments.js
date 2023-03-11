@@ -1,11 +1,11 @@
 
-let send = document.querySelector('.send');
-let name = document.querySelector('.name');
-let image = document.querySelector('.image')
-let comments = document.querySelector('.comments');
-let authorImage = document.querySelector('.author__image');
-let authorName = document.querySelector('.author__name');
-let authorComments = document.querySelector('.author__comments');
+const send = document.querySelector('.send');
+const name = document.querySelector('.name');
+const image = document.querySelector('.image')
+const comments = document.querySelector('.comments');
+const authorImage = document.querySelector('.author__image');
+const authorName = document.querySelector('.author__name');
+const authorComments = document.querySelector('.author__comments');
 
 function capitalize(str) {
     return str.replace(/(^|\s)\S/g, (a) => {return a.toUpperCase()})

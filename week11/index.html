@@ -70,44 +70,44 @@
 
 <script>
 
-let sale = document.querySelector('.sale');
+const sale = document.querySelector('.sale');
 
-let price1 = document.getElementById('price1');
-let priceSale1 = document.getElementById('priceSale1');
+const price1 = document.getElementById('price1');
+const priceSale1 = document.getElementById('priceSale1');
 
-let price2 = document.getElementById('price2');
-let priceSale2 = document.getElementById('priceSale2');
+const price2 = document.getElementById('price2');
+const priceSale2 = document.getElementById('priceSale2');
 
-let price3 = document.getElementById('price3');
-let priceSale3 = document.getElementById('priceSale3');
+const price3 = document.getElementById('price3');
+const priceSale3 = document.getElementById('priceSale3');
 
-let price4 = document.getElementById('price4');
-let priceSale4 = document.getElementById('priceSale4');
+const price4 = document.getElementById('price4');
+const priceSale4 = document.getElementById('priceSale4');
 
-let price11=Number(price1.innerText);
-let price22=Number(price2.innerText);
-let price33=Number(price3.innerText);
-let price44=Number(price4.innerText);
+const price11=Number(price1.innerText);
+const price22=Number(price2.innerText);
+const price33=Number(price3.innerText);
+const price44=Number(price4.innerText);
 
-let total2=price11+price22+price33+price44;
+const total2=price11+price22+price33+price44;
 
-let totalCost=document.getElementById('totalCost');
+const totalCost=document.getElementById('totalCost');
 totalCost.innerText=total2;
 
 function changePrice(){
-    const result1 = Number(price1.textContent) - Number(price1.textContent) /100*20;
+    let result1 = Number(price1.textContent) - Number(price1.textContent) /100*20;
     priceSale1.innerText = result1;
     price1.style.textDecoration = "line-through";
 
-    const result2 = Number(price2.textContent) - Number(price2.textContent) /100*20;
+    let result2 = Number(price2.textContent) - Number(price2.textContent) /100*20;
     priceSale2.innerText = result2;
     price2.style.textDecoration = "line-through";
 
-    const result3 = Number(price3.textContent) - Number(price3.textContent) /100*20;
+    let result3 = Number(price3.textContent) - Number(price3.textContent) /100*20;
     priceSale3.innerText = result3;
     price3.style.textDecoration = "line-through";
 
-    const result4 = Number(price4.textContent) - Number(price4.textContent) /100*20;
+    let result4 = Number(price4.textContent) - Number(price4.textContent) /100*20;
     priceSale4.innerText = result4;
     price4.style.textDecoration = "line-through";
 
