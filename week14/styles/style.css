@@ -12,9 +12,6 @@ main {
 }
 
 li {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr;
     border-bottom: #2A2F36 solid 1px;
     padding: 20px;
 }
@@ -45,7 +42,5 @@ h2 {
 }
 
 .best {
-    display: flex;
-    justify-content: center;
     padding-left: 30px;
 }
