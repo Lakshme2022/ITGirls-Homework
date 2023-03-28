@@ -1,0 +1,51 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFE6DD;
+    margin: 20px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: #2A2F36 solid 1px;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Monserrat", sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.name {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.career {
+    color: gray;
+    color: #2A2F36;
+}
+
+.films {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+}
+
+.best {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}

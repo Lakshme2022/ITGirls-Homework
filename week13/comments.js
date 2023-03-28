@@ -70,3 +70,4 @@ function SEND(){
 }
 
 send.addEventListener('click', SEND);
+
