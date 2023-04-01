@@ -78,3 +78,7 @@ button {
 .del {
     margin: 10px;
 }
+
+.del:hover {
+    cursor: pointer;
+}
