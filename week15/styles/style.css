@@ -1,0 +1,80 @@
+
+main {
+   margin: 20px;
+}
+
+h3 {
+    margin-top: 2vh;
+    font-family: "Monserrat", sans-serif;
+}
+
+.task {
+    width: 42vw;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 10px;
+}
+
+.newTask {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50vw;
+    height: 40px;
+    padding-left: 10px;
+}
+
+button {
+    width: 10vw;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background: salmon;
+    font-size: 12px;
+}
+
+.noTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 10vh;
+}
+
+.no {
+    font-family: "Monserrat", sans-serif;
+    color: gray;
+}
+
+.taskList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53vw;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.butt {
+    width: 53vw;
+    display: flex;
+    justify-content: end;
+}
+
+.clear:disabled {
+    margin-top: 20px;
+    background: lightgrey;
+    color: gray;
+}
+
+.clear:enabled {
+    margin-top: 20px;
+    background: salmon;
+    color: black;
+}
+
+.del {
+    margin: 10px;
+}

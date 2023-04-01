@@ -55,11 +55,7 @@ function getAll() {
     </li>`
     }
     document.getElementById(`cards`).innerHTML = cards;
-}
 
-getAll();
-
-function getBest() {
     let best = "";
     for (let item of directors) {
         best += `${item.top_rated_film}, `
@@ -67,5 +63,6 @@ function getBest() {
     document.getElementById(`best`).innerText = best;
 }
 
-getBest();
+getAll();
+
 
