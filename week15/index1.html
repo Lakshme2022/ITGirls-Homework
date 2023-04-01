@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+
+2023
+
+<script>
+
+  let n = "2023";
+  let a = Array();
+  for (let number of n) {
+    console.log(number);
+    a.push(number);
+    console.log(a);
+  }
+  console.log(a.length);
+
+let sum = 0;
+function count() {
+  for(let i = 0; i < a.length; i++){
+    sum += Number(a[i]);
+  }
+  return sum;
+}
+ console.log(count());
+
+  let reversed = a.reverse();
+
+  let newSum = "";
+  function countAgain() {
+      for (let x = 0; x < a.length; x++) {
+          newSum += reversed[x];
+      }
+      return newSum;
+  }
+  console.log(countAgain());
+
+</script>
+
+</body>
+</html>
