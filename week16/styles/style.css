@@ -1,0 +1,54 @@
+
+main {
+    width: 70vw;
+    margin: auto;
+}
+header {
+    display: flex;
+    height: 30vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+}
+ h1 {
+     font-family: "Monserrat", sans-serif;
+     font-size: 42px;
+     margin-right: 40px;
+ }
+
+ h3 {
+     font-family: "Monserrat", sans-serif;
+ }
+
+ button {
+     width: 200px;
+     height: 45px;
+     background-color: gold;
+     border: none;
+     border-radius: 5px;
+     margin-top: 20px;
+ }
+
+ p {
+     font-family: "Monserrat", sans-serif;
+ }
+
+ select {
+     padding: 12px;
+     border-radius: 5px;
+     width: 100%;
+     margin-bottom: 10px;
+ }
+
+ label {
+     padding-right: 20px;
+ }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор стоимости автомобиля</title>
+
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/style.css"/>
+
+</head>
+<body>
+<header>
+  <div class="info">
+  <h1>Сколько стоит автомобиль?</h1>
+  <h3>Укажите параметры автомобиля и мы определим его примерную рыночную стоимость.</h3>
+  </div>
+  <img src="assets/images/auto.png">
+</header>
+
+<main>
+  <form name="form">
+
+    <p>Укажите марку и модель автомобиля</p>
+    <select name="makers">
+      <option value="kia">Kia</option>
+      <option value="honda">Honda</option>
+      <option value="renault">Renault</option>
+      <option value="volkswagen">Volkswagen</option>
+    </select>
+
+
+     <select name="models">
+
+      </select>
+
+    <p>Тип двигателя</p>
+    <div>
+      <input type="radio" id="petrol" name="fuel" value="petrol">
+      <label for="petrol">бензин (включая гибрид)</label>
+      <input type="radio" id="diesel" name="fuel" value="diesel">
+      <label for="petrol">дизель</label>
+      <input type="radio" id="electrical" name="fuel" value="electrical">
+      <label for="petrol">электричество</label>
+      <input type="radio" id="gas" name="fuel" value="gas">
+      <label for="petrol">газ</label>
+    </div>
+
+    <p>Состояние автомобиля</p>
+    <div>
+    <input type="radio" id="new" name="condition" value="new">
+    <label for="new">Новый</label>
+    <input type="radio" id="old" name="condition" value="old">
+    <label for="old">Подержанный</label>
+    </div>
+    <div id="ownersNumber">
+
+    </div>
+
+    <p>Год производства</p>
+    <select name="year">
+      <option value="less3">2023-2020</option>
+      <option value="4to8">2019-2015</option>
+      <option value="9to15">2014-2008</option>
+      <option value="more15">до 2008</option>
+    </select>
+
+    <p>Способ оплаты</p>
+    <div>
+      <input type="radio" id="card" name="payment" value="card">
+      <label for="card">Картой</label>
+      <input type="radio" id="cash" name="payment" value="cash">
+      <label for="cash">Наличными</label>
+      <input type="radio" id="entity" name="payment" value="entity">
+      <label for="entity">Счёт на юридическое лицо</label>
+    </div>
+
+    <button>Оценить автомобиль</button>
+
+  </form>
+
+  <div name="result">
+
+  </div>
+
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
