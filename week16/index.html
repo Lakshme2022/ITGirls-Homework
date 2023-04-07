@@ -20,49 +20,47 @@
 <main>
   <form name="form">
 
-    <p>Укажите марку и модель автомобиля</p>
-    <select name="makers">
-      <option value="kia">Kia</option>
-      <option value="honda">Honda</option>
-      <option value="renault">Renault</option>
-      <option value="volkswagen">Volkswagen</option>
+    <p>Марка и модель автомобиля</p>
+    <select name="makers">id
+      <option value="Honda">Honda</option>
+      <option value="Kia">Kia</option>
+      <option value="Renault">Renault</option>
+      <option value="Volkswagen">Volkswagen</option>
     </select>
 
-
      <select name="models">
+     </select>
 
-      </select>
-
-    <p>Тип двигателя</p>
-    <div>
-      <input type="radio" id="petrol" name="fuel" value="petrol">
-      <label for="petrol">бензин (включая гибрид)</label>
-      <input type="radio" id="diesel" name="fuel" value="diesel">
-      <label for="petrol">дизель</label>
-      <input type="radio" id="electrical" name="fuel" value="electrical">
-      <label for="petrol">электричество</label>
-      <input type="radio" id="gas" name="fuel" value="gas">
-      <label for="petrol">газ</label>
-    </div>
+    <p>Год производства</p>
+    <select name="year">
+      <option value="2023-2020">2023-2020</option>
+      <option value="2019-2015">2019-2015</option>
+      <option value="2014-2008">2014-2008</option>
+      <option value="2007">2007 или ранее</option>
+    </select>
 
     <p>Состояние автомобиля</p>
     <div>
-    <input type="radio" id="new" name="condition" value="new">
+    <input type="radio" id="new" name="condition" value="new" checked>
     <label for="new">Новый</label>
     <input type="radio" id="old" name="condition" value="old">
     <label for="old">Подержанный</label>
     </div>
-    <div id="ownersNumber">
 
+    <div id="ownersNumber">
     </div>
 
-    <p>Год производства</p>
-    <select name="year">
-      <option value="less3">2023-2020</option>
-      <option value="4to8">2019-2015</option>
-      <option value="9to15">2014-2008</option>
-      <option value="more15">до 2008</option>
-    </select>
+    <p>Тип двигателя</p>
+    <div>
+      <input type="radio" id="petrol" name="fuel" value="petrol">
+      <label for="petrol">бензин</label>
+      <input type="radio" id="diesel" name="fuel" value="diesel">
+      <label for="petrol">дизель</label>
+      <input type="radio" id="electrical" name="fuel" value="electrical">
+      <label for="petrol">электричество</label>
+      <input type="radio" id="hybrid" name="fuel" value="hybrid">
+      <label for="petrol">гибрид</label>
+    </div>
 
     <p>Способ оплаты</p>
     <div>
@@ -74,12 +72,11 @@
       <label for="entity">Счёт на юридическое лицо</label>
     </div>
 
-    <button>Оценить автомобиль</button>
-
   </form>
 
-  <div name="result">
+  <button id="butt">Оценить автомобиль</button>
 
+  <div id="result">
   </div>
 
 </main>
