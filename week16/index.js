@@ -92,7 +92,7 @@ const fuelArray = ['petrol', 'electrical', 'hybrid', 'diesel',];
 const yearArray = ['2023-2020', '2019-2015', '2014-2008', '2007'];
 const ownersArray =['1', '2', '3', '4'];
 const ownersMod = [.06, .04, .02, 0];
-const yearMod = [-.25, -.45, -.60, -.75];
+const yearMod = [-.25, -.45, -.60, -.80];
 
 function PRICE() {
 
@@ -118,9 +118,9 @@ function PRICE() {
         Mod += .05;
     }
 
-    let finalPrice = modelPrice + modelPrice * Mod;
+    let finalPrice = (modelPrice + modelPrice * Mod).toLocaleString('ru-RU', {useGrouping:true});
 
-    let addResult = `<h2>Оценочная стоимость:</h2>
+    let addResult = `<h2>Оценочная стоимость в рублях:</h2>
         <h2 class="result_price">${finalPrice}</h2>
         <h4>Марка:</h4>
         <h4 class="result_makes">${makers.value}</h4>
