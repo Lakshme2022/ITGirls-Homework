@@ -88,8 +88,6 @@ transportObjects.forEach(transport => console.log(transport.getInfo()));
 
 transportObjects.forEach(transport => console.log(transport.getPrice()));
 
-console.log(vehicleObjects);
-
 vehicleObjects.forEach(vehicle => {if (vehicle.getDoorsCount) console.log(vehicle.getDoorsCount())});
 
 vehicleObjects.forEach(vehicle => {if (vehicle.getMaxSpeed) console.log(vehicle.getMaxSpeed())});

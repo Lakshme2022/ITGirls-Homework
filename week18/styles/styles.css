@@ -1,0 +1,75 @@
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 2fr 2fr 0.3fr;
+    border: 1px dashed black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.info {
+    text-align: center;
+    }
+
+img {
+    width: 100%;
+
+}
+
+h2 {
+    font-family: "Monserrat", sans-serif;
+    font-size: 32px;
+}
+
+p {
+    font-family: "Monserrat", sans-serif;
+    font-size: 16px;
+}
+
+.rating-area {
+    overflow: hidden;
+    width: 210px;
+    margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 40px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 30px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+.rating-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+    position: relative;
+}
