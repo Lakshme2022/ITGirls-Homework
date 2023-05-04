@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+
+    <link rel="stylesheet" href="assets/styles/normalize.css"/>
+    <link rel="stylesheet" href="assets/styles/styles.css"/>
+
+</head>
+<body>
+<header>
+  <img src="assets/images/logo1.png" alt="ITGERLSCHOOL_logo">
+    <h2>БЛОГ</h2>
+</header>
+<main>
+    <h3>Новый пост</h3>
+    <section class="createPost">
+    <input id="title" placeholder="Заголовок поста" type="text">
+    <input id="body" placeholder="Текст поста" type="text">
+    <button id="add">Создать пост</button>
+    </section>
+    <section id="newPost"></section>
+</main>
+
+<script>
+    const addPost = document.getElementById('add')
+    const newPost = document.getElementById('newPost');
+
+    addPost.onclick = function (event) {
+        event.preventDefault();
+        let title = document.getElementById('title');
+        let body = document.getElementById('body');
+
+        let new_post = {
+            title: title.value,
+            body: body.value
+        }
+
+        fetch("https://jsonplaceholder.typicode.com/posts" ,
+            {
+                method: 'POST',
+                body: JSON.stringify(new_post),
+                headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            },
+    })
+        .then(response => response.json())
+        .then((post) => {
+            console.log(post);
+            newPost.innerHTML +=`<h3>${post.id}: ${post.title}</h3>
+                                         <div>${post.body}</div>`;
+
+        })
+            .catch(error => console.log(error));
+    }
+
+
+</script>
+</body>
+</html>
