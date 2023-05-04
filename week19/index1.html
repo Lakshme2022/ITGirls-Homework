@@ -48,8 +48,8 @@
         .then(response => response.json())
         .then((post) => {
             console.log(post);
-            newPost.innerHTML +=`<h3>${post.id}: ${post.title}</h3>
-                                         <div>${post.body}</div>`;
+            newPost.innerHTML +=`<h3>${post.title}</h3>
+                                 <div>${post.body}</div>`;
 
         })
             .catch(error => console.log(error));
