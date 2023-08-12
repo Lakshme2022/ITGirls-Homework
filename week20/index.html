@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarWars</title>
+
+
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+
+</head>
+<body>
+<header>
+<img src="assets/images/logo1.png" alt="ITGERLSCHOOL_logo">
+<h2>Кого или что будем искать?</h2>
+</header>
+<main>
+    <select id="title">
+            <option value="films">Фильм</option>
+            <option value="people">Персонажа</option>
+            <option value="planets">Планету</option>
+            <option value="species">Расу</option>
+            <option value="starships">Звездолёт</option>
+            <option value="vehicles">Транспортное средство</option>
+    </select>
+    <input id="num" placeholder="Введите номер" type="number">
+    <button id="find">Вперед!</button>
+
+    <h3 id="load" class="pink"></h3>
+    <h3 id="content" class="normal"></h3>
+    <h3 id="error" class="pink"></h3>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>

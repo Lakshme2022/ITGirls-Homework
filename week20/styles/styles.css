@@ -1,0 +1,47 @@
+body {
+    padding: 20px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+select {
+    padding: 12px;
+    border-radius: 5px;
+    width: 35vw;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 35vw;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+}
+
+button {
+    width: 10vw;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background: rgba(225, 39, 88, 0.89);
+    font-size: 14px;
+}
+
+h3 {
+    width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.normal {
+   color: black;
+}
+
+.pink {
+    color: rgba(225, 39, 88, 0.89);
+
+}
+
