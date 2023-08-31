@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  },
+  "name": "week20",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.65.1",
+    "scss": "^0.2.4"
+  },
+  "scripts": {
+    "front": "parcel index.html --port 8888"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

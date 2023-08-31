@@ -13,11 +13,11 @@ function getInfo() {
     load.innerText = '... Загрузка ...';
 
     fetch(`https://swapi.nomoreparties.co/${title.value}/${num.value}`)
-        .then((resonse) => {
-            if (resonse.ok === true) {
-                return resonse.json()
+        .then((response) => {
+            if (response.ok === true) {
+                return response.json()
             } else {
-                return Promise.reject(resonse.status)
+                return Promise.reject(response.status)
             }
         })
         .then((data) => {
