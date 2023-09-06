@@ -181,7 +181,7 @@ function result_phrase(final_percent) {
     if (60 <= final_percent <= 79) {
         return 'Перед составлением резюме рекомендую повторить темы:'
     }
-    return '<a href="https://www.youtube.com/watch?v=cyfaOAH-CF0">Можешь приступать к подготовке к собеседованию!</a>';
+    return '<a href="https://www.youtube.com/watch?v=cyfaOAH-CF0">Можешь приступать к подготовке к собеседованию! Жми сюда!</a>';
 }
 
 function suggestion(final_percent) {
