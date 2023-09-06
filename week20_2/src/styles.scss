@@ -1,10 +1,30 @@
 
+@media screen and (max-width: 767px) {
+
+  main {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+
+  main {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1181px) {
+
+  main {
+    width: 50%;
+  }
+}
+
 body {
   background-color: rgba(250, 219, 227, 1);
 }
 
 main {
-  width: 50%;
   background-color: white;
   border-radius: 20px;
   margin: auto;
