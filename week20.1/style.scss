@@ -73,10 +73,11 @@ button:hover {
   accent-color: rgba(238, 68, 95, 1);
 }
 
-section {
+.content {
   display: flex;
   flex-direction: column;
 }
+
 .center {
   display: flex;
   justify-content: space-around;

@@ -36,7 +36,7 @@ function range() {
 }
 
 function render(page) {
-  const content_body = document.getElementById('content_body');
+  const content = document.getElementById('content');
   const prev =  document.getElementById('prev');
   const next =  document.getElementById('next');
   const data = loadFromStorage();
@@ -44,7 +44,7 @@ function render(page) {
 
   switch (page) {
     default:
-      content_body.innerHTML = '<div class="indent">Мы подготовили чек лист, с помощью которого ты сможешь определить свой уровень знаний и готовность стать Junior Frontend разработчицей</div>' +
+      content.innerHTML = '<div class="indent">Мы подготовили чек лист, с помощью которого ты сможешь определить свой уровень знаний и готовность стать Junior Frontend разработчицей</div>' +
           '<div class="pink center indent">Оцени свои Hard skills по 5 бальной шкале, где 5 - знаю отлично, а 1 - не знаю ничего</div>' +
           '<div class="indent personalinfo">' +
           '<input class="info" id="name" placeholder="Твое имя" type="text" value="'+data['name']+'">' +
@@ -70,9 +70,9 @@ function render(page) {
       break
 
     case "beginner":
-      content_body.innerHTML = '<h2 class="pink">Первый уровень: Beginner (Новичок)</h2>';
+      content.innerHTML = '<h2 class="pink">Первый уровень: Beginner (Новичок)</h2>';
       questions[page].forEach( (q) => {
-            content_body.innerHTML += '<div class="module"> <div class="indent">' + q + '</div>' + range();
+            content.innerHTML += '<div class="module"> <div class="indent">' + q + '</div>' + range();
           }
       )
       prev.style.display =  'inline';
@@ -85,9 +85,9 @@ function render(page) {
       break
 
     case "trainee":
-      content_body.innerHTML = '<h2 class="pink">Второй уровень: Trainee (Стажёр)</h2>';
+      content.innerHTML = '<h2 class="pink">Второй уровень: Trainee (Стажёр)</h2>';
       questions[page].forEach( (q) => {
-            content_body.innerHTML += '<div class="module"> <div class="indent">' + q + '</div>' + range();
+            content.innerHTML += '<div class="module"> <div class="indent">' + q + '</div>' + range();
           }
       )
       prev.style.display = 'inline';
@@ -101,9 +101,9 @@ function render(page) {
       break
 
     case "junior":
-      content_body.innerHTML = '<h2 class="pink">Третий уровень: Junior (Младший разработчик)</h2>';
+      content.innerHTML = '<h2 class="pink">Третий уровень: Junior (Младший разработчик)</h2>';
       questions[page].forEach( (q) => {
-            content_body.innerHTML += '<div class="module"> <div class="indent">' + q + '</div>' + range()
+            content.innerHTML += '<div class="module"> <div class="indent">' + q + '</div>' + range()
             next.innerText = 'Посчитать';
           }
       )
@@ -119,7 +119,7 @@ function render(page) {
 
     case "result":
 
-      content_body.innerHTML = '<div class="result"><h2 class="pink center">Отличная работа, поздравляю!</h2>' +
+      content.innerHTML = '<div class="result"><h2 class="pink center">Отличная работа, поздравляю!</h2>' +
           '<div class="center"><h3>Твой результат: </h3><h3 class="pink">' + count() + ' %</h3></div>' +
           '<div class="center"><h3>что соответствует уровню: </h3><h3 class="pink">' + level() + '</h3></div>' +
           '<div class="center"><h2 class="text indent">' + conclusion() +'</h2></div>' +
@@ -199,7 +199,7 @@ function conclusion() {
     return 'Перед составлением резюме рекомендую повторить темы:'
   }
   if (count() >= 80) {
-    return '<a href="https://www.youtube.com/watch?v=cyfaOAH-CF0">Можешь приступать к подготовке к собеседованию!</a>';
+    return '<a href="https://www.youtube.com/watch?v=cyfaOAH-CF0">Можешь приступать к подготовке к собеседованию! Жми сюда!</a>';
   }
 }
 

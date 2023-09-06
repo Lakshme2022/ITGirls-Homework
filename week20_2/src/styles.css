@@ -19,9 +19,14 @@ main {
 .info {
   background-color: rgb(247, 247, 247);
   border: none;
+  box-shadow: none;
   border-radius: 20px;
   width: 30%;
-  padding: 10px;
+  padding: 12px;
+}
+
+.info:focus {
+  outline: 2px solid rgb(238, 68, 95);
 }
 
 .personalinfo {
@@ -61,6 +66,7 @@ button:hover {
 
 .input {
   width: 135px;
+  margin-left: 15px;
 }
 
 .numbers {
@@ -73,7 +79,7 @@ button:hover {
   accent-color: rgb(238, 68, 95);
 }
 
-section {
+.content {
   display: flex;
   flex-direction: column;
 }
@@ -102,4 +108,4 @@ a:hover {
   text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
