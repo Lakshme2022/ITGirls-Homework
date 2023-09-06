@@ -1,0 +1,113 @@
+
+body {
+  background-color: rgba(250, 219, 227, 1);
+}
+
+main {
+  width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 3%;
+  padding: 2%;
+  font-family: 'Jost', sans-serif;
+}
+
+.pink {
+  color: rgba(238, 68, 95, 1);
+}
+
+.info {
+  background-color: rgba(247, 247, 247, 1);
+  border: none;
+  box-shadow: none;
+  border-radius: 20px;
+  width: 30%;
+  padding: 12px;
+}
+
+.info:focus {
+  outline: 2px solid rgba(238, 68, 95, 1);
+}
+
+.personalinfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.controlbut {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+button {
+  background-color: rgba(238, 68, 95, 1);
+  border: 2px solid rgba(238, 68, 95, 1);
+  border-radius: 20px;
+  width: 25%;
+  padding: 10px;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: rgba(238, 68, 95, 1);
+}
+
+.indent {
+  padding-bottom: 25px;
+}
+
+.module {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 135px;
+  margin-left: 15px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider {
+  accent-color: rgba(238, 68, 95, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.result {
+  width: 75%;
+  margin: auto;
+}
+
+a {
+  color: rgba(238, 68, 95, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.text {
+  text-align: center;
+}
+
+
+
