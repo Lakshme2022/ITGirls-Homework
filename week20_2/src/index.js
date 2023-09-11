@@ -130,10 +130,15 @@ function validate() {
     for (const e of inputs) {
         if (!e.value) {
             const alert = document.createElement('div');
+            const alertYes = document.querySelector('#alertYes');
             const controlbut = document.querySelector('.controlbut');
-            alert.innerHTML = '<h3 class="center pink">Пожалуйста, сначала заполните все поля!</h3>';
-            controlbut.before(alert)
+            if (!alertYes)
+            {
+                alert.innerHTML = '<h3 class="center pink" id="alertYes">Пожалуйста, сначала заполните все поля!</h3>';
+                controlbut.before(alert)
+            }
             return false;
+
         }
     }
     return true;
