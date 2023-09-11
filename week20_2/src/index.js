@@ -167,7 +167,7 @@ function level(final_percent) {
     if (final_percent <= 59) {
         return '"Новичок"';
     }
-    if (60 <= final_percent <= 79) {
+    if (final_percent >=60 && final_percent <= 79) {
         return '"Стажёр"'
     }
     return '"Младший разработчик"';
