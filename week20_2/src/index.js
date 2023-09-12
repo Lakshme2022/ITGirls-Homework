@@ -5,10 +5,9 @@ const userData = getFromStorage();
 let pageIndex = -1; //начинаем с -1, чтобы индексы json и LocalStorage совпадали
 
 
-
 function renderCards() {
     const arrKeyData = Object.keys(data)
-    content.innerHTML = "";
+    content.innerHTML = '';
     let leftBtnName = 'Назад';
     let rightBtnName = 'Вперед';
 
