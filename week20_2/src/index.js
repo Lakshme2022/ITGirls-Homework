@@ -137,7 +137,6 @@ function validate() {
                 controlbut.before(alert)
             }
             return false;
-
         }
     }
     return true;
@@ -221,7 +220,6 @@ function saveToCsv() {
     }
     const blob = new Blob([csv_content], { type: 'application/json' });
     saveAs(blob, 'survey_results.csv');
-
 }
 
 document.addEventListener("DOMContentLoaded", function () {
