@@ -1,5 +1,5 @@
 import {useState} from "react";
-import '../style/Rating.css';
+import './Rating.css';
 
 export default function Rating() {
 

@@ -1,5 +1,5 @@
-import Rating from  './Rating';
-import '../style/Card.css';
+import Rating from  '../Rating/Rating';
+import './Card.css';
 
 export default function Card({name, universe, alterego, occupation, friends, superpowers, url}) {
     return (
