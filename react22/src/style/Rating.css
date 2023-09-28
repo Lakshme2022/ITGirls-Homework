@@ -1,0 +1,22 @@
+
+.star-rating {
+    overflow: hidden;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.on {
+    color: gold;
+}
+
+.off {
+    color: #cccccc;
+}

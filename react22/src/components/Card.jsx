@@ -1,4 +1,5 @@
 import Rating from  './Rating';
+import '../style/Card.css';
 
 export default function Card({name, universe, alterego, occupation, friends, superpowers, url}) {
     return (
@@ -11,7 +12,7 @@ export default function Card({name, universe, alterego, occupation, friends, sup
                 <p>Друзья: {friends}</p>
                 <p>Суперсилы: {superpowers}</p>
             </div>
-            <img className="cards__img" src={url}></img>
+            <img className="cards__img" alt="" src={url}></img>
             <Rating/>
         </div>
     );

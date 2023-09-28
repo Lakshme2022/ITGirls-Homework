@@ -1,4 +1,6 @@
 import {useState} from "react";
+import '../style/Rating.css';
+
 export default function Rating() {
 
         const [rating, setRating] = useState(0);

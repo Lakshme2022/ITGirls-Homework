@@ -1,0 +1,25 @@
+.card {
+    display: grid;
+    grid-template-rows: 2fr 1.6fr 0.3fr;
+    border: 1px dashed black;
+    border-radius: 10px;
+    width: 340px;
+    height: 650px;
+    margin: 10px;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+
+}
+
+h2 {
+    font-family: "Monserrat", sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Monserrat", sans-serif;
+    font-size: 16px;
+}
