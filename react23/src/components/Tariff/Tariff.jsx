@@ -1,4 +1,3 @@
-
 import './Tariff.scss';
 
 export default function Tariff({price, speed, color, selected}) {
