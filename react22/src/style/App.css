@@ -2,8 +2,8 @@
   align-items: center;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  grid-template-rows: repeat(3, 680px);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(10, 670px);
   grid-gap: 5px;
 
   }
