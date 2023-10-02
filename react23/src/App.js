@@ -29,7 +29,7 @@ const array = [
 export default function App() {
   return (
     <div className="App">
-      {array.map(item => <Tariff {...item}/>)}
+      {array.map((item, index) => <Tariff key={index} {...item}/>)}
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Tariff({price, speed, color, selected}) {
                 <div className='header grid'>Безлимитный {price}</div>
                     <div className='table'>
                          <div className='text rub'>руб</div>
-                         <h className='number grid'>{price}</h>
+                         <div className='number grid'>{price}</div>
                          <div className='month'>/мес</div>
                     </div>
                 </div>
