@@ -1,0 +1,8 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 693px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=App.css.map */
