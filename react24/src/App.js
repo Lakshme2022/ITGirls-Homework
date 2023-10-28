@@ -26,10 +26,8 @@ const array = [
   }
 ]
 
-
-
 export default function App() {
-  const [id, setId] =  useState(0);
+  const [selectedId, setSelectedId] =  useState(0);
 
   return (
     <div className="App">
@@ -38,9 +36,11 @@ export default function App() {
               key={index}
               id={index+1}
               {...item}
-              item={item}
-              selected={index+1 === id}
-              setId={setId}/>)}
+              selected={index+1 === selectedId}
+              setSelectedId={setSelectedId}
+              selectedId={selectedId}
+          />)}
+
     </div>
   );
 }

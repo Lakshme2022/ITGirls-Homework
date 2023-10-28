@@ -1,9 +1,9 @@
 import './Tariff.scss';
 
-export default function Tariff({id, item, price, speed, color, selected, setId}) {
+export default function Tariff({id, price, speed, color, selected, setSelectedId, selectedId}) {
 
     function handleSelected (){
-        setId(id)
+        setSelectedId(selectedId === id ? 0 : id)
     }
 
     return (
