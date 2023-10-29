@@ -7,7 +7,7 @@ import {useState} from "react";
 function App() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    function onClickF(value) {
+    function handleClick(value) {
 
         let new_value = currentIndex + value;
         new_value = new_value < 0 ? 0 : new_value;
@@ -19,14 +19,14 @@ function App() {
 
       <div className="App">
           <div className="container">
-            <Arrow onClickF={onClickF} direction={'left'}/>
+            <Arrow handleClick={handleClick} direction={'left'}/>
 
             <Card english={data[currentIndex].english}
                   transcription={data[currentIndex].transcription}
                   russian={data[currentIndex].russian}
                   key={currentIndex}/>
 
-          <Arrow onClickF={onClickF} direction={'right'}/>
+          <Arrow handleClick={handleClick} direction={'right'}/>
           </div>
       </div>
   );
