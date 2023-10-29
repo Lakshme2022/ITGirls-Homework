@@ -1,0 +1,21 @@
+.round {
+    width: 60px;
+    height: 60px;
+    background-color: #598a59;
+    border-radius: 30px;
+    border-width: 0;
+    color: white;
+}
+
+.round:hover {
+    border-width: 2px;
+    border-color: green;
+}
+
+.round:active {
+    color: green;
+}
+.arrow {
+    font-weight: bold;
+    font-size: 32px;
+}
