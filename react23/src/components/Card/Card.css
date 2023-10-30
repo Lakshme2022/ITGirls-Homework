@@ -1,0 +1,15 @@
+.card {
+    width: 250px;
+    height: 350px;
+    border: 1px dashed black;
+    border-radius: 10px;
+}
+
+img {
+    padding-top: 20px;
+    height: 150px;
+}
+
+.price {
+    padding-top: 20px;
+}

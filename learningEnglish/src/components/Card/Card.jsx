@@ -8,7 +8,6 @@ export default function Card({english, transcription, russian}) {
         setCheck(false);
     }
 
-
     return (
         <div className="card">
             <h1>{english}</h1>

@@ -1,7 +1,7 @@
-.App {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 693px;
-  margin: auto;
-}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}

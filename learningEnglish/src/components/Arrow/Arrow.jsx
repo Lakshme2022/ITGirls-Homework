@@ -10,5 +10,3 @@ export default function Arrow(prop) {
         </button>
     );
 }
-
-
