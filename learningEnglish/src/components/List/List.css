@@ -1,0 +1,25 @@
+.list {
+  margin: 10px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+
+}
+
+.word {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+}
+
+span {
+    border: 2px solid #905ca9;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+input {
+    border: 1px solid #905ca9;
+    border-radius: 10px;
+    padding: 25px;
+}

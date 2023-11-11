@@ -1,7 +1,7 @@
 .round {
     width: 60px;
     height: 60px;
-    background-color: #598a59;
+    background-color: #905ca9;
     border-radius: 30px;
     border-width: 0;
     color: white;
@@ -9,11 +9,11 @@
 
 .round:hover {
     border-width: 2px;
-    border-color: green;
+    border-color: blueviolet;
 }
 
 .round:active {
-    color: green;
+    color: blueviolet;
 }
 
 .arrow {

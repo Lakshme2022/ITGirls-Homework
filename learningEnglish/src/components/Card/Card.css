@@ -1,8 +1,8 @@
 .card {
     width: 225px;
     height: 330px;
-    background-color: #93b2a8;
-    border: 2px solid #388538;
+    background-color: #9a82a8;
+    border: 2px solid #905ca9;
     border-radius: 25px;
     margin: auto;
 }
@@ -21,9 +21,9 @@ h1 {
 }
 
 button {
-    width: 130px;
-    height: 35px;
-    background-color: #598a59;
+    width: 160px;
+    height: 40px;
+    background-color: #905ca9;
     border-radius: 20px;
     border-width: 0;
     color: white;

@@ -1,0 +1,20 @@
+button {
+    width: 160px;
+    height: 35px;
+    background-color: #905ca9;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #905ca9;
+    margin-top: 2px;
+}
+
+button:hover {
+    border-width: 2px;
+    border-color: blueviolet;
+}
+
+button:active {
+    color: blueviolet;
+}
