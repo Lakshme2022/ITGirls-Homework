@@ -12,11 +12,6 @@ export default function List({id, english, transcription, russian, delWord, save
         setStEdit(true)
     }
 
-    function addWord(){
-        setStEdit(false)
-    }
-
-
     return (
         <div className="list">
     {!stEdit ? (<div className="word">
