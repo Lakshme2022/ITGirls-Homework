@@ -15,7 +15,7 @@ function App() {
     function delWord(id) {
         const newStData = stData.filter(item => item.id !== id)
         setStData(newStData)
-    }
+        }
 
     function saveWord(id, stEnglish, stTranscription, stRussian) {
         setStData(prevData => {
@@ -34,7 +34,7 @@ function App() {
         new_value = new_value < 0 ? 0 : new_value;
         new_value = new_value > data.length-1 ? 0 : new_value;
         setCurrentIndex(new_value)
-    }
+        }
 
     return (
     <BrowserRouter>
