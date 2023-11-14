@@ -1,11 +1,12 @@
 import './style/App.css';
 import data from './data.json';
 import {useState} from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Card from './components/Card/Card';
 import Arrow from "./components/Arrow/Arrow";
 import List from "./components/List/List";
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import logo from './style/logo.png';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     const [stData, setStData] = useState(data);
@@ -38,14 +39,7 @@ function App() {
     return (
     <BrowserRouter>
       <div className="App">
-          <header>
-              <nav>
-                  <Link to={"/"} className="logo_link">
-                      <img src={logo} alt="Главная"/>
-                  </Link>
-                  <Link to={"/game"} className="logo_link">Тренажер</Link>
-              </nav>
-          </header>
+          <Header/>
           <div>
               <Routes>
                   <Route path="/game" element={
@@ -60,13 +54,14 @@ function App() {
                   } />
                   <Route path="/" element={
                       <div>
-                          {stData.map((item) => (
-                              <List {...item} delWord={delWord} saveWord={saveWord}/>
+                          {stData.map((item, index) => (
+                              <List {...item} delWord={delWord} saveWord={saveWord} key={'l'+index}/>
                           ))}
                       </div>
                   } />
               </Routes>
           </div>
+          <Footer/>
       </div>
     </BrowserRouter>
   );
