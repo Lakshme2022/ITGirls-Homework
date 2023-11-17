@@ -20,7 +20,7 @@ h1 {
     font-weight: bold;
 }
 
-button {
+.push {
     width: 160px;
     height: 40px;
     background-color: #905ca9;
@@ -29,4 +29,7 @@ button {
     color: white;
     font-size: 18px;
     font-weight: bold;
+}
+.push:focus {
+    outline: 2px solid blueviolet;
 }

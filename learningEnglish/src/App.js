@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
     const [stData, setStData] = useState(data);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [resultGame, setResultGame] = useState (0);
 
     function delWord(id) {
         const newStData = stData.filter(item => item.id !== id)
@@ -32,9 +33,14 @@ function App() {
     function handleClickArrow(value) {
         let new_value = currentIndex + value;
         new_value = new_value < 0 ? 0 : new_value;
-        new_value = new_value > data.length-1 ? 0 : new_value;
+        new_value = new_value > stData.length-1 ? 0 : new_value;
         setCurrentIndex(new_value)
         }
+
+    function learnedWords() {
+       const newResultGame = resultGame + 1;
+        setResultGame(newResultGame > stData.length ? stData.length : newResultGame)
+    }
 
     return (
     <BrowserRouter>
@@ -43,13 +49,17 @@ function App() {
           <div>
               <Routes>
                   <Route path="/game" element={
+                      <div>
                       <div className="container">
                           <Arrow handleClick={handleClickArrow} direction={'left'}/>
                           <Card english={stData[currentIndex].english}
                                 transcription={stData[currentIndex].transcription}
                                 russian={stData[currentIndex].russian}
-                                key={currentIndex}/>
+                                key={currentIndex}
+                                learnedWords={learnedWords}/>
                           <Arrow handleClick={handleClickArrow} direction={'right'}/>
+                      </div>
+                          <div className="result">Выучено слов: {resultGame}</div>
                       </div>
                   } />
                   <Route path="/" element={
