@@ -1,6 +1,6 @@
 import './style/App.css';
 import data from './data.json';
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Card from './components/Card/Card';
 import Arrow from "./components/Arrow/Arrow";
@@ -8,7 +8,7 @@ import List from "./components/List/List";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-function App() {
+function App(props) {
     const [stData, setStData] = useState(data);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [resultGame, setResultGame] = useState (0);
@@ -42,13 +42,17 @@ function App() {
         setResultGame(newResultGame > stData.length ? stData.length : newResultGame)
     }
 
+    function f(e) {
+        console.log('fff')
+    }
+
     return (
     <BrowserRouter>
       <div className="App">
           <Header/>
           <div>
               <Routes>
-                  <Route path="/game" element={
+                  <Route handle={f} path="/game" element={
                       <div>
                       <div className="container">
                           <Arrow handleClick={handleClickArrow} direction={'left'}/>
@@ -56,7 +60,8 @@ function App() {
                                 transcription={stData[currentIndex].transcription}
                                 russian={stData[currentIndex].russian}
                                 key={currentIndex}
-                                learnedWords={learnedWords}/>
+                                learnedWords={learnedWords}
+                          />
                           <Arrow handleClick={handleClickArrow} direction={'right'}/>
                       </div>
                           <div className="result">Выучено слов: {resultGame}</div>

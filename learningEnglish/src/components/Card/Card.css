@@ -30,6 +30,9 @@ h1 {
     font-size: 18px;
     font-weight: bold;
 }
-.push:focus {
-    outline: 2px solid blueviolet;
+
+.push:focus-visible {
+    outline: none;
+    box-shadow: 0 0 2px 2px blueviolet;
 }
+
