@@ -4,11 +4,11 @@ import React, {useState, useEffect, useRef} from 'react';
 export default function Card({english, transcription, russian, learnedWords}) {
     const [check, setCheck] = useState(true);
     const buttonRef = useRef(null);
-    
+
     useEffect(() => {
         if(buttonRef.current) {
            buttonRef.current.focus();
-        };
+        }
     }, []);
 
     const handleClickCheck = () => {
@@ -25,5 +25,4 @@ export default function Card({english, transcription, russian, learnedWords}) {
                     <button className="push" ref={buttonRef} autoFocus={true}>Проверить</button>  : <div className="russian">{russian}</div>}
             </div>
         </div>
-    );
-};
+    )};

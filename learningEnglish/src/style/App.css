@@ -1,18 +1,3 @@
 .App {
   text-align: center;
 }
-
-.container {
-  margin: auto;
-  padding: 20px;
-  width: 380px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.result {
-  margin-bottom: 10px;
-  color: #61219a;
-  font-size: 18px;
-}
