@@ -4,6 +4,7 @@ import {useState} from "react";
 import List from "../List/List";
 import Card from "../Card/Card";
 import Arrow from "../Arrow/Arrow";
+import './Content.css';
 
 export default function Content() {
     const [stData, setStData] = useState(data);
