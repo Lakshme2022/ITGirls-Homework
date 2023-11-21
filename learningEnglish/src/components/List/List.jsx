@@ -1,6 +1,6 @@
 import {useState} from "react";
-import './List.css';
 import Button from "../Button/Button";
+import './List.css';
 
 export default function List({id, english, transcription, russian, delWord, saveWord}){
     const [stEdit, setStEdit] = useState(false);

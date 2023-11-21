@@ -1,5 +1,5 @@
-import './Card.css';
 import React, {useState, useEffect, useRef} from 'react';
+import './Card.css';
 
 export default function Card({english, transcription, russian, learnedWords}) {
     const [check, setCheck] = useState(true);
