@@ -19,7 +19,17 @@ span {
 }
 
 input {
-    border: 1px solid #905ca9;
     border-radius: 10px;
     padding: 25px;
 }
+
+
+.valid {
+    border: 1px solid #905ca9;
+}
+
+
+.invalid {
+    border: 2px solid red;
+}
+

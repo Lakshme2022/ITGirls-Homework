@@ -1,7 +1,7 @@
 import React from "react";
 import './Button.css';
 
-export default function Button({content, handleClickButton}) {
+export default function Button({content, handleClickButton, disabled}) {
     return (
-    <button onClick={handleClickButton}>{content}</button>
+    <button disabled={disabled} onClick={handleClickButton}>{content}</button>
     )};
