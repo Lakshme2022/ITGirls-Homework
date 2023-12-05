@@ -1,0 +1,6 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 47vw;
+    margin-left: 30px;
+}

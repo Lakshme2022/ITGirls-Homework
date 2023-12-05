@@ -1,0 +1,26 @@
+img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.comment {
+    margin-top: 20px;
+}
+
+.new_comment {
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 2px #214588;
+}
+
+.author {
+    display: grid;
+    grid-template-columns: 120px 2fr 1fr;
+}
+
+.author__comments {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: #1a3e8b dashed 1px;
+}

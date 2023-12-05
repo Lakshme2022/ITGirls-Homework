@@ -12,7 +12,7 @@ export default function List({id, english, transcription, russian, delWord, save
     const [stRussianValid, setStRussianValid] =useState(true);
 
 
-    function editWord(){
+    function editWord() {
         setStEdit(true)
     }
 
@@ -25,14 +25,14 @@ export default function List({id, english, transcription, russian, delWord, save
                 </div> ) :
                (<div className="word">
                     <input className={stEnglishValid ? "valid" : "invalid"} type="text" value={stEnglish} onChange={(event) => {
-                        setStEnglishValid(!!event.target.value)
-                        setStEnglish(event.target.value)
+                        setStEnglishValid(!!event.target.value && /[\da-zA-Z]/g.test(event.target.value));
+                        setStEnglish(event.target.value);
                     }}/>
                     <input  className={stTranscriptionValid ? "valid" : "invalid"} type="text" value={stTranscription } onChange={(event) => {
-                        setStTranscriptionValid(!!event.target.value)
+                        setStTranscriptionValid(!!event.target.value && /[\da-zA-Z]/g.test(event.target.value))
                         setStTranscription(event.target.value)}}/>
                     <input  className={stRussianValid ? "valid" : "invalid"} type="text" value={stRussian} onChange={(event) => {
-                        setStRussianValid(!!event.target.value)
+                        setStRussianValid(!!event.target.value && /[\dА-Яа-я]/g.test(event.target.value))
                         setStRussian(event.target.value)}}/>
                </div>)
     }
@@ -45,7 +45,9 @@ export default function List({id, english, transcription, russian, delWord, save
                 ) : (
                     <Button handleClickButton={(e) => {
                         saveWord(id, stEnglish, stTranscription, stRussian);
-                        setStEdit(false);}}
+                        setStEdit(false);
+
+                    }}
                         disabled={stEnglishValid && stTranscriptionValid && stRussianValid ? false : true}
                         content='Сохранить'/>
                 )}
